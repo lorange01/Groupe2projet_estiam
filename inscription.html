@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Photo-Expresso</title>
+	<meta name="author" content=" AUTHOR'S NAME HERE ">
+	<meta http-equiv="reply-to" content=" EMAIL ADDRESS HERE ">
+	<meta name="keywords" content=" LIST OF KEYWORDS - KEEP TO UNDER 50 ">
+	<meta name="description" content=" FULL WEBSITE DESCRIPTION HERE ">
+
+	<script type="text/javascript" src="includes/js/jquery-1.3.js"></script>
+	<script type="text/javascript" src="includes/js/validity.js"></script>
+
+	<script type="text/javascript">
+	<!--
+	$(function() { 
+	  $("form").validity(function() {
+		$("#name").require().match("nonHtml");
+		$("#email").require().match("email");
+		$("#message").require().match("nonHtml");
+	  });
+	});
+	//-->
+	</script>
+
+	<style type="text/css" media="all">
+	 @import url("includes/css/main.css");
+	</style>
+	</head>
+	<body>
+	<div class="container">
+	  <div class="center">
+	  <a href="##"><span>Photo-Expresso</span></a>
+		<ul id="main_nav">
+		  <li><a href="index.html" class="active">Acceuil</a></li>
+		  <li><a href="about.html">Concept</a></li>
+		  <li><a href="photos.html">Importez Vos photos</a></li>
+			  <li><a href="contact.html">Contactez nous</a></li>
+		  <li><a href="contact.html">Connexion</a></li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="container noise">
+	  <div class="center content_section">
+		<h2>Inscrivez vous en quelques clics</h2>
+		<form action="##" method="post" class="common">
+		  <fieldset>
+			<legend>&nbsp;</legend>
+			<ol>
+			  <li>
+				<label for="name">Nom</label>
+				<input type="text" id="name" name="name" >
+			  </li>
+			  <li>
+				<label for="prenom">Prenom</label>
+				<input type="text" id="prenom" name="preonom" >
+			  </li>
+
+			  <li>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" >
+			  </li>
+			  <li>
+				<label for="password">mot de passe</label>
+				<input type="password" id="password" name="password" >
+			  </li>
+			  <li>
+				<label for="adresse">Adresse</label>
+				<input type="text" id="adresse" name="adresse" >
+			  </li>
+			  <li>
+				<label for="code_postal">Code postal</label>
+				<input type="num" id="code_postal" name="code_postal" >
+			  </li>
+			  <li>
+				<label for="ville">Ville</label>
+				<input type="text" id="ville" name="ville" >
+			  </li>
+			  <li>
+				<label for="pays">pays</label>
+				<input type="text" id="pays" name="pays" >
+			  </li>
+			  <li>
+				<input type="submit" id="submit" value="Inscription" >
+			  </li>
+			</ol>
+		  </fieldset>
+		</form>
+		<p class="buttcompte ">Déjà un compte ? <a class="cg" href="connexion.html">Connectez vous</a></p>
+	  </div>
+	</div>
+	<div class="container noise" id="footer">
+	  <div class="center">
+		<p>&copy; Estiam 2015 - 2016 &#124; <a href="##">www.photo-expresso.fr</a></p>
+	  </div>
+	</div>
+	</body>
+</html>

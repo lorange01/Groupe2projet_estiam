@@ -1,0 +1,42 @@
+#slider {}
+
+#slider ul, #slider li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#slider li {
+  width: 850px !important;
+  height: 500px !important;
+  overflow: hidden !important;
+}	
+
+#prevBtn, #nextBtn { 
+  display: block;
+  width: 46px;
+  height: 75px;
+  position: absolute;
+  left: -54px; /* 8 + negative width of button */
+  top: 213px; /* 250 - half height of button */
+}	
+
+#nextBtn { 
+  left: 858px;
+}														
+
+#prevBtn a, #nextBtn a {  
+  display: block;
+  width: 46px;
+  height: 75px;
+  background: url(../../images/sliderbuttonleft.jpg) no-repeat 0 0;	
+ /* background: url(../../images/easysliders_btn_next.gif) no-repeat 0 0;	*/
+
+}
+ 
+	
+
+#nextBtn a { 
+ background: url(../../images/sliderbuttonright.jpg) no-repeat 0 0;	
+
+
+}	
