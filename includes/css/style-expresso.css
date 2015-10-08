@@ -1,0 +1,39 @@
+		.toff-import{
+			background-color: #747474;
+			width: 700px;
+			height: 330px;		
+			display: table;
+			margin: 0 auto;
+			}
+			
+		.choix-import{
+			display: inline-block;
+			width: 250px;
+			height: 250px;
+			text-align: center;
+			margin-top: 4%;
+			margin-left: 9%;
+			
+			}
+			.choix-import:hover{
+			border: 1px solid #FFF;
+			}
+			
+			.choix-import img {
+				max-width: 75%;
+				height: auto;
+			}
+		
+		#title-box{
+			width: 700px;
+			height: 35px;
+			background-color: #1D1D1D;
+			color: #FFF;
+			}
+
+		.toff-import h2, h3, a{
+			text-align: center;
+			font-family: verdana;	
+			color: #FFF;
+			text-decoration: none;
+			}

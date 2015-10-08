@@ -268,7 +268,7 @@ form.common #submit {
 #packages {
   display: block;
   float: left;
-  margin: 10px 0 60px 0;
+  margin: 10px 0 60px 120px;
 }
 
 #packages li {
