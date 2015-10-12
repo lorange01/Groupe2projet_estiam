@@ -23,14 +23,20 @@
 	<style type="text/css" media="all">
 	 @import url("../includes/css/main.css");
 	 @import url("../includes/css/style-expresso.css");
-	 
+	 #files p{
+		float: left;
+		text-align: center;
+	 }
+	 #envoi-img{
+		float :right; 	 
+	 }
 	</style>
 
 	</head>
 	<body>
 	<div class="container">
 	  <div class="center">
-	  <a href="##"><span>Photo-Expresso</span></a>
+	  <a href="../index.html"><span>Photo-Expresso</span></a>
 		<ul id="main_nav">
 		  <li><a href="../index.html" class="active">Acceuil</a></li>
 		  <li><a href="../about.html">Concept</a></li>
@@ -51,8 +57,10 @@
 					<span class="btn btn-success fileinput-button">
 						<i class="glyphicon glyphicon-plus"></i>
 					<span>Vers un ordinateur</span>
+				
 				<!-- The file input field used as target for the file upload widget -->
 				<input id="fileupload" type="file" name="files[]" multiple>
+				
 			</span>
 				</figcaption>
 		</figure >
@@ -68,41 +76,44 @@
 				</a>
 				</figcaption>			
 		</figure>
-		    <!-- BAR DE PROGRESSION -->
-    <div id="progress" class="progress">
-        <div class="progress-bar progress-bar-success"></div>
-    </div>
-    <!-- CONTAINER DES IMG UPLOAD -->
-    <div id="files" class="files"></div>
-    <br>
+					<!-- BAR DE PROGRESSION -->
+			<div id="progress" class="progress">
+				<div class="progress-bar progress-bar-success"></div>
+			</div>
+			<!-- CONTAINER DES IMG UPLOAD -->
+			<div id="files" class="files"></div>
+			<br>
+			<button type="submit" class="btn btn-default" id="envoi-img">Envoyez</button>
+	
       </div>
+		
+		<script src="../includes/js/jquery.ui.widget.js"></script>
 		<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
 		<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-		<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
-	  <script src="../includes/js/jquery.ui.widget.js"></script>
+		<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>  
 	  <script src="../includes/js/jquery.iframe-transport.js"></script>
 	  <script src="../includes/js/jquery.fileupload.js"></script>
 	  <script src="../includes/js/jquery.fileupload-process.js"></script>
 	  <script src="../includes/js/jquery.fileupload-image.js"></script>
-	  <script src="../includes/js/jquery.fileupload-validate.js"></script>
+	  <script src="../includes/js/main.js"></script>
 	  <script>
 /*jslint unparam: true, regexp: true */
 /*global window, $ */
 $(function () {
     'use strict';
     // Change this to the location of your server-side upload handler:
-    var url = window.location.hostname === '##' ?
-                '//jquery-file-upload.appspot.com/' : '../server/',
+    var url = window.location.hostname === 'localhost' ?
+                '//jquery-file-upload.appspot.com/' : 'server/php/',
         uploadButton = $('<button/>')
             .addClass('btn btn-primary')
             .prop('disabled', true)
-            .text('Processing...')
+            .text('Chargement...')
             .on('click', function () {
                 var $this = $(this),
                     data = $this.data();
                 $this
                     .off('click')
-                    .text('Abort')
+                    .text('En cours...')
                     .on('click', function () {
                         $this.remove();
                         data.abort();
@@ -122,8 +133,8 @@ $(function () {
         // send Blob objects via XHR requests:
         disableImageResize: /Android(?!.*Chrome)|Opera/
             .test(window.navigator.userAgent),
-        previewMaxWidth: 100,
-        previewMaxHeight: 100,
+        previewMaxWidth: 80,
+        previewMaxHeight: 80,
         previewCrop: true
     }).on('fileuploadadd', function (e, data) {
         data.context = $('<div/>').appendTo('#files');
@@ -134,6 +145,7 @@ $(function () {
                 node
                     .append('<br>')
                     .append(uploadButton.clone(true).data(data));
+					
             }
             node.appendTo(data.context);
         });
@@ -153,7 +165,7 @@ $(function () {
         }
         if (index + 1 === data.files.length) {
             data.context.find('button')
-                .text('Upload')
+                .text('Télecharger')
                 .prop('disabled', !!data.files.error);
         }
     }).on('fileuploadprogressall', function (e, data) {
@@ -161,6 +173,7 @@ $(function () {
         $('#progress .progress-bar').css(
             'width',
             progress + '%'
+			
         );
     }).on('fileuploaddone', function (e, data) {
         $.each(data.result.files, function (index, file) {
@@ -179,7 +192,7 @@ $(function () {
         });
     }).on('fileuploadfail', function (e, data) {
         $.each(data.files, function (index) {
-            var error = $('<span class="text-danger"/>').text('File upload failed.');
+            var error = $('<span class="text-danger"/>').text('Erreur survenue');
             $(data.context.children()[index])
                 .append('<br>')
                 .append(error);
@@ -257,6 +270,10 @@ $(function () {
 		<p>&copy; Estiam 2015 - 2016 &#124; <a href="##">www.photo-expresso.fr</a></p>
 	  </div>
 	</div>
+	<script>
+document.getElementById("footer").innerHTML = 
+"Page hostname is: " + window.location.hostname;
+</script>
 	</body>
 
 	</html>

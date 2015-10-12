@@ -1,0 +1,283 @@
+
+	.pop {
+	  display:none;
+	  position:relative;
+	  z-index: 8;
+	  top:22%;
+	  left:-380%;
+	  height:auto;
+	  background: #DDDAD8;
+	  border: 1px solid #55799E;
+	  width: 700px;
+	/* margin: -40px 0 0 -540px;*/
+
+	}
+
+	.pop > h1 {
+	  color:#44465D;
+	  font-size:18pt;
+	  font-weight: 700;
+	  text-align: center;
+	  
+	}
+	.liner-pop{
+	max-width: 55%; 
+	height: 2px;
+	margin: 0 auto ;
+	}
+
+	.pop > p {
+	font-size:14px;
+	color:#554BB4;
+	font-family: verdana;
+	}
+
+	.pop > span {
+	  font-size:25pt;
+	  cursor:pointer;
+	  position:absolute;
+	  top:-3%;
+	  right:0%;
+	  border-radius:100px;
+	  color:#554BB4;
+	  width:30px;
+	  height:30px;
+	}
+
+	.pop > span:hover {
+	  color:#4F4C4C;
+	}
+
+	.formlabel{
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight:bold;
+	color:#44465D;
+	list-style-type:none;
+	letter-spacing: 0.05em;
+
+}
+	.list-form{
+	list-style-type:none;
+	text-align: center;
+	}
+	
+	.form-lower{
+	width: 275px;
+	height: 30px;
+	}
+	.form-lower-name{
+	width: 180px;
+	height: 30px;
+	}
+	.newsl a{
+		text-decoration: none;
+		color: #000;
+	}
+	.newsl {
+		margin-top: 20%;
+		width : 150px;
+		height: 35px;
+		background-color: #FFF;
+		cursor:pointer;
+	}
+	.newsl :hover {
+		width : 150px;
+		height: 35px;
+		background-color: #F7F;
+	}
+	
+	.show-tick{
+	margin-top: 23%;
+	}
+	
+	/*message*/
+	
+	textarea {
+	resize: none;
+	}
+	
+	#myform-mess{
+	float: right;	
+	}
+	
+	#form-message{
+	width: 330px;
+	height: 110px;	
+	}
+	
+	.form-mess{
+	border: 1px solid  #44465D;
+	}
+	
+	.formlabel-mess{
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight:bold;
+	color:#44465D;
+	list-style-type:none;
+	letter-spacing: 0.05em;
+
+}
+	.list-form-mess{
+	list-style-type:none;
+	}
+	
+	.buttsend-mess{
+	background-color: #000;
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:14px;
+	float:right;
+	margin: -15px 148px 0 0;
+	letter-spacing: 0.05em;
+	}
+	.form-lower-mess{
+	width: 196px;
+	height: 30px;
+	}
+	.popup {
+	  display:none;
+	  position:relative;
+	  z-index: 8;
+	  top:22%;
+	  left:10%;
+	  max-width:80%;
+	  height:auto;
+	  background: #B290A1;
+	  border: 1px solid #55799E;
+	}
+	.popup > h1 {
+	  color:#44465D;
+	  font-size:18pt;
+	  font-weight: 700;
+	  text-align: center;  
+	}
+	.liner-pop{
+	max-width: 55%; 
+	height: 1px;
+	margin: 0 auto ;
+	background-color: #A473AE;
+	}
+	.popup > p {
+	 text-align: center;
+	font-size:14px;
+	color:#FFF;
+	font-family: verdana;
+	}
+	.popup > span {
+	  font-size:25pt;
+	  cursor:pointer;
+	  position:absolute;
+	  top:-2%;
+	  right:0%;
+	  border-radius:100px;
+	  color:#FFF;
+	  width:30px;
+	  height:30px;
+	}
+	.popup > span:hover {
+	  color:#4F4C4C;
+	}
+
+	.formlabel{
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight:bold;
+	color:#44465D;
+	list-style-type:none;
+	letter-spacing: 0.05em;
+
+}
+	.list-form{
+	list-style-type:none;
+	text-align: center;
+	}
+	
+	.buttsend{
+	background-color: #000;
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:14px;
+	margin: -2px 0 0 5px;
+	letter-spacing: 0.05em;
+	}
+	.form-lower{
+	width: 275px;
+	height: 30px;
+	}
+	.form-lower-name{
+	width: 180px;
+	height: 30px;
+	}	
+	/*message*/
+	textarea {
+	resize: none;
+	}
+	#form-message{
+	width: 430px;
+	height: 110px;	
+	MARGIN: 15px 0 0 15px;
+	}	
+	.form-mess{
+	border: 1px solid  #44465D;
+	}	
+	.formlabel-mess{
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight:bold;
+	color:#44465D;
+	list-style-type:none;
+	letter-spacing: 0.05em;
+	margin: 56px 0 0 170px;
+
+}
+	.list-form-mess{
+	list-style-type:none;
+	}
+	
+	.buttsend-mess{
+	background-color: #000;
+	font-family:'Oswald',arial narrow,sans-serif;
+	font-size:14px;
+	float:right;
+	margin: -15px 148px 0 0;
+	letter-spacing: 0.05em;
+	}
+	
+	#myform-mess {
+    float: right;
+	}
+
+	.form-lower-mess{
+	width: 196px;
+	height: 30px;
+	}
+	
+	/*medias queries*/
+
+@media screen and (min-width: 320px) and (max-width: 410px) {
+	.popup > span {
+	  font-size:25px;
+	  cursor:pointer;
+	  position:absolute;
+	  top:-2%;
+	  right:-2%;
+	  }	  
+	 .pop > span {
+	  font-size:25px;
+	  cursor:pointer;
+	  position:absolute;
+	  top:-2%;
+	  right:-2%;
+	}
+	#popup{ width: 300px; display: none;}
+	
+	#myform-mess{ 
+		display: block;
+		margin: 0 -180px 0 0 ;
+	}
+
+}

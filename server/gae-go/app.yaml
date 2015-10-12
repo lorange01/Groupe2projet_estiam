@@ -1,0 +1,12 @@
+application: jquery-file-upload
+version: 2
+runtime: go
+api_version: go1
+
+handlers:
+-url: /(.*\.(gif|GIF|png|PNG|jpg|JPG|ico|ICO|js|JS|css|CSS))
+  static_files: \1
+  upload: (.*\.(gif|GIF|png|PNG|jpg|JPG|ico|ICO|js|JS|css|CSS))
+  expiration: '1d'
+- url: /.*
+  script: import_fichier.php
