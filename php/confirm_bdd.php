@@ -45,6 +45,14 @@
 					<p class="container-confirm">Vos informations ont bien été enregistrées .</p>							
 				</div>
 				<div class="col-md-3 on retour">
+				 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <br/>
+                <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="KTW7TAJPQAQFL">
+                        <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_paynowCC_LG.gif"  name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                            <img alt=""  src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                                
+                                </form>
 					<a href="import_fichier-part2.php">Retour  page d'accueil</a>
 				</div>							
 			</div>

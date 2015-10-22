@@ -329,3 +329,7 @@ form.common #submit {
 #faq_list h3 a {
   text-decoration: none;
 }
+
+.container noise ol li{
+   list-style: none;
+}
